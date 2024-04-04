@@ -1,0 +1,432 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  background: black;
+}
+
+.left {
+  width: 20vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-content: center;
+}
+
+.middle {
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
+
+.right {
+  color: white;
+  font-size: medium;
+}
+
+.NavBtn {
+  color: #28282B;
+}
+
+.middle button:hover {
+  transform: scale(1.05);
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 900px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left,
+  .middle {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .right {
+    display: none;
+    /* Hide the right element */
+  }
+}
+
+/* ========================== */
+.landingPageContainer {
+  background: black;
+  height: 70vh;
+  font-family: "Mukta", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.landingStack {
+  display: flex;
+  direction: row;
+  height: 100%;
+  width: 70%;
+  justify-content: center;
+  align-content: center;
+}
+
+.firstBtn {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin-left: 1rem;
+  height: 4rem;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 2rem;
+  max-width: 300px;
+}
+
+.secondBtn {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  height: 3rem;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 1rem;
+  border: 3px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+}
+
+.firstBtn:hover {
+  border-radius: 15px;
+}
+
+.secondBtn:hover {
+  border-radius: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .firstBtn {
+    width: 100%;
+    /* Adjust width for smaller screens */
+    max-width: none;
+    /* Remove maximum width on smaller screens */
+  }
+}
+
+/* *************** */
+
+.AboutBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: black;
+}
+
+.secBox {
+  width: 90vw;
+  height: auto;
+  /* Remove redundant height property */
+}
+
+.aboutPara {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.FirstGridItem {
+  height: 80vh;
+  border-radius: 3rem;
+}
+
+.SecondGridItem {
+  height: 80vh;
+  background-color: blue;
+}
+
+/* Larger screens */
+@media (max-width: 1100px) {
+  .aboutPara {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .FirstGridItem,
+  .SecondGridItem {
+    height: 50vh;
+  }
+
+  .FirstGridItem,
+  .SecondGridItem {
+    display: flex;
+    flex-direction: column-reverse;
+    /* Reverse order for smaller screens */
+  }
+}
+
+/* ************ */
+
+/* Appropriate styles for the container */
+.contact-container {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Alkatra", "Roboto", sans-serif;
+}
+
+/* Styling for the main stack */
+.loginStack {
+  width: 30rem;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  background: #f1f1f1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+/* Styling for the main heading */
+.loginStack h4 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Styling for the input fields */
+.contact-input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Styling for the submit button */
+.contact-btn {
+  background: #24b139;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Styling for the additional message text */
+.contact-container p {
+  color: #555;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .loginStack {
+    width: 90%;
+  }
+
+  /* Additional styles for smaller screens */
+  .contact-btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* *******COntact CSS********** */
+
+.ContactBox {
+  background: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutSecBox {
+  height: 70%;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contactHeading {
+  color: #f1f1f1;
+}
+
+.ContactInput {
+  padding: 10px;
+  border: 2px solid #28282B;
+  width: 25rem;
+  height: 20px;
+}
+
+.MsgContactInput {
+  padding: 10px;
+  border: 2px solid #28282B;
+  width: 25rem;
+  height: 60px;
+}
+
+.send-button {
+  background-color: #4caf50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+
+.send-button:hover {
+  background-color: #45a049;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+@media (max-width: 1100px) {
+  .ContactInput {
+    width: 95%;
+  }
+
+  .MsgContactInput {
+    width: 95%;
+  }
+
+  .send-button {
+    width: 10rem;
+  }
+}
+
+/* =====================Footer.js Styles============================= */
+
+.footerBox {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.footerStack {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40vh;
+  width: 90vw;
+  flex-direction: column;
+}
+
+.FooterLogoStack {
+  display: flex;
+}
+
+.FooterBtn {
+  border: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.footerText {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.BackToTopBtn {
+  border: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  bottom: 35px;
+  right: 10px;
+}
+
+.FooterLogoStack button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .footerText {
+    font-size: 13px;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footerText {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+/* ==========================SERVICES CSS============================== */
+
+.ServicesBox {
+  background: black;
+  padding: 1vh;
+}
+
+.TextBox {
+  width: 100%;
+  height: 4rem;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ServicesGridItem {
+  height: 14rem;
+  width: 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  background: transparent;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 960px) {
+  .ServicesGridItem {
+    height: 14rem;
+    width: 14rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .ServicesGridItem {
+    height: 15rem;
+    width: 75%;
+  }
+}
